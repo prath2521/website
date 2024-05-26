@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thred Vision</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .showcase {
+            background: url('showcase.jpg') no-repeat center center/cover;
+            color: #fff;
+            height: 400px;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .showcase h1 {
+            font-size: 55px;
+        }
+        .showcase p {
+            font-size: 20px;
+        }
+        .section {
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .section.dark {
+            background-color: #333;
+            color: #fff;
+        }
+        .section.light {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .products, .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .products div, .services div {
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            flex: 1;
+            max-width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .products img, .services img {
+            max-width: 100%;
+        }
+        .cta {
+            background: #333;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+        .cta h2 {
+            margin: 0 0 20px;
+        }
+        .cta a {
+            background: #f4f4f4;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Thred Vision</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="showcase">
+        <div class="container">
+            <h1>Welcome to Thred Vision</h1>
+            <p>Your vision, our thread.</p>
+        </div>
+    </section>
+
+    <section id="about" class="section light">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Thred Vision is a leading garment manufacturer dedicated to creating high-quality apparel. Our commitment to excellence and innovation drives our success in the fashion industry.</p>
+        </div>
+    </section>
+
+    <section id="products" class="section dark">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="products">
+                <div>
+                    <img src="product1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Description of product 1.</p>
+                </div>
+                <div>
+                    <img src="product2.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>Description of product 2.</p>
+                </div>
+                <div>
+                    <img src="product3.jpg" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>Description of product 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section light">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div>
+                    <h3>Custom Design</h3>
+                    <p>We offer bespoke design services to bring your unique ideas to life.</p>
+                </div>
+                <div>
+                    <h3>Manufacturing</h3>
+                    <p>State-of-the-art manufacturing processes ensure top-notch quality.</p>
+                </div>
+                <div>
+                    <h3>Distribution</h3>
+                    <p>Efficient distribution network to deliver your products on time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="cta">
+        <div class="container">
+            <h2>Ready to get started?</h2>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </section>
+
+    <section id="contact" class="section dark">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us at:</p>
+            <p>Email: contact@thredvision.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Thred Vision &copy; 2024. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
